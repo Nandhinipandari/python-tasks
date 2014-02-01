@@ -1,0 +1,11 @@
+import ws,urllib
+txtfile=("python.txt",'wt')
+print("Enter the url")
+print("http://au.edu/tncolleges/results")
+myurl=input()
+for i in ws.findall("href=["'](.[^"']+)["']",urllib.urlopen(myurl).read())
+	print(i)
+	for j in ws.findall("href=["'](.^"']+)["']",urllib.urlopen(myurl).read())
+		print(j)
+		txtfile.write(w+)
+txtfile.close()
